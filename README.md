@@ -1,43 +1,33 @@
-# PalindroneCheckerApp
+This project demonstrates how to check whether a given string is a palindrome in Java.
 
-PalindromeCheck is a simple and efficient program that determines whether a given word, phrase, or number is a palindrome.
+A palindrome is a word, phrase, or sequence that reads the same backward as forward.
 
-A palindrome is a sequence that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).
+Example:
 
-Examples:
+    madam 
+    
+    racecar 
+    
+    hello 
 
-    madam →  Palindrome
-    
-    racecar →  Palindrome
-    
-    hello →  Not a palindrome
-    
-    A man a plan a canal Panama →  Palindrome
+ Goal :
 
-Features
+    To check whether a string is a palindrome by:
+    
+    Reversing the string using a loop.
+    
+    Comparing the original string with the reversed string.
+    
+    Displaying the result.
 
-    Checks words, phrases, or numbers
+ Program Flow :
 
-Ignores:
-
-    Spaces
+    Initialize the original string.
     
-    Punctuation
+    Use a for loop to iterate through the string in reverse order.
     
-    Case sensitivity
+    Build the reversed string using string concatenation (+).
     
-    Lightweight and fast
+    Compare both strings using the equals() method.
     
-    Easy to integrate into other projects
-
-How It Works :-
-
-    Accepts input from the user.
-    
-    Removes non-alphanumeric characters.
-    
-    Converts text to lowercase.
-    
-    Compares the cleaned string with its reverse.
-    
-    Returns whether it is a palindrome.
+    Print whether the string is a palindrome or not.
