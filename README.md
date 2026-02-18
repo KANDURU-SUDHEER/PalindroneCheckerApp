@@ -1,4 +1,64 @@
-# PalindroneCheckerApp
-# UseCase2PalindromeCheckerApp – README
+PalindromeCheckerApp (Version 4.0) validates whether a given string is a palindrome using:
 
-This application demonstrates a simple palindrome validation in Java using a hardcoded string value (`"madam"`). It compares characters from both ends of the string by incrementing a left pointer and decrementing a right pointer until they meet, determining whether the string reads the same forward and backward. The program introduces fundamental string comparison logic without using advanced data structures and prints the result to the console indicating whether the predefined text is a palindrome or not.
+Character Array Conversion
+
+Two-Pointer Technique
+
+Efficient Character Comparison
+
+Minimal Extra Logic
+
+This implementation improves performance clarity and demonstrates optimized string validation using array-based processing.
+
+ What is a Palindrome?
+
+A palindrome is a word, phrase, or sequence that reads the same forward and backward.
+
+Examples
+Input	Output
+madam	true
+level	true
+hello	false
+racecar	true
+🛠 Features
+
+Converts string to character array
+
+Uses start and end pointers
+
+Efficient comparison loop
+
+O(n) time complexity
+
+Clean modular method design
+
+Console-based interaction
+
+ Algorithm Used – Two Pointer Technique
+
+Convert the string to a char[]
+
+Initialize:
+
+start = 0
+
+end = length - 1
+
+Compare characters at both ends
+
+Move inward:
+
+start++
+
+end--
+
+If mismatch found → Not a palindrome
+
+If loop completes → Palindrome
+
+⏱ Complexity Analysis
+
+Time Complexity: O(n)
+
+Space Complexity: O(n)
+(due to character array conversion)
