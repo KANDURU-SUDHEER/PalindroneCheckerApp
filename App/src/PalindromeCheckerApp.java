@@ -1,7 +1,9 @@
 /**
  * =========================================
- * MAIN CLASS - UseCase- 1, palindromeApp
+ * MAIN CLASS - UseCase- 2, palindromeApp
  * =========================================
+ *use case 2 : hardcoded palindrome validation
+ *
  * Application entry point of the
  * palindrome checker management system.
  *
@@ -10,37 +12,40 @@
  * palindrome checker management system
  *
  * At this stage the application :
- * - starts execution from the main() method
- * -displays a welcome message
- * - shows application version
+ * - stores a predefined string
+ * - compares characters from both ends
+ * - determines weather the string is palindrome
+ * - displays the result
  *
  * @author KANDURU-SUDHEER
- * @version 1.0
+ * @version 2.0
  */
 
 public class PalindromeCheckerApp {
 
     /**
-     * Application entry point
+     * Application entry point for uc2
      * This is the first method executed by the JVM
      */
     public static void main(String[] args) {
 
         System.out.println("Hello and welcome!");
-        System.out.println("Application Version: 1.0");
+        System.out.println("Application Version: 2.0");
 
-        String input = "MADAM";
+        String word = "madam";
 
-        String reversed = new StringBuilder(input)
-                .reverse()
-                .toString();
+        String reverse = "";
 
-        if (input.equals(reversed)) {
-            System.out.println("Palindrome");
-        } else {
-            System.out.println("Not a Palindrome");
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reverse = reverse + word.charAt(i);
+        }
+
+        if (word.equals(reverse)) {
+            System.out.println(word + " is a Palindrome.");
+
         }
     }
 }
+
 
 
