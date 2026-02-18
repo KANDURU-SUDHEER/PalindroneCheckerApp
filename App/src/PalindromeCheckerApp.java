@@ -1,51 +1,63 @@
+import java.util.Scanner;
+
 /**
- * =========================================
- * MAIN CLASS - UseCase- 2, palindromeApp
- * =========================================
- *use case 2 : hardcoded palindrome validation
+ * ==========================================================
+ * MAIN CLASS - UseCase4PalindromeCheckerApp
+ * ==========================================================
  *
- * Application entry point of the
- * palindrome checker management system.
+ * Use Case 4: Character Array Based Validation
  *
- * description :
- * this class represents the entry point of the
- * palindrome checker management system
- *
- * At this stage the application :
- * - stores a predefined string
- * - compares characters from both ends
- * - determines weather the string is palindrome
- * - displays the result
+ * Description:
+ * This class validates a palindrome by converting
+ * the string into a character array and comparing
+ * characters using the two-pointer technique.
  *
  * @author KANDURU-SUDHEER
- * @version 2.0
+ * @version 4.0
  */
-
 public class PalindromeCheckerApp {
 
     /**
-     * Application entry point for uc2
-     * This is the first method executed by the JVM
+     * Checks whether the given string is a palindrome.
+     * @param input The string to check
+     * @return true if palindrome, otherwise false
+     */
+    public static boolean isPalindrome(String input) {
+
+        char[] characters = input.toCharArray();
+
+        int start = 0;
+        int end = characters.length - 1;
+
+        while (start < end) {
+            if (characters[start] != characters[end]) {
+                return false;
+            }
+            start++;
+            end--;
+        }
+
+        return true;
+    }
+
+    /**
+     * Application entry point.
      */
     public static void main(String[] args) {
 
-        System.out.println("Hello and welcome!");
-        System.out.println("Application Version: 2.0");
+        Scanner scanner = new Scanner(System.in);
 
-        String word = "madam";
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
 
-        String reverse = "";
+        boolean result = isPalindrome(input);
 
-        for (int i = word.length() - 1; i >= 0; i--) {
-            reverse = reverse + word.charAt(i);
-        }
+        System.out.println(input + " is palindrome? " + result);
 
-        if (word.equals(reverse)) {
-            System.out.println(word + " is a Palindrome.");
-
-        }
+        scanner.close();
     }
 }
+
 
 
 
