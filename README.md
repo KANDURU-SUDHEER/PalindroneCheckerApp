@@ -1,43 +1,4 @@
 # PalindroneCheckerApp
+# UseCase2PalindromeCheckerApp – README
 
-PalindromeCheck is a simple and efficient program that determines whether a given word, phrase, or number is a palindrome.
-
-A palindrome is a sequence that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).
-
-Examples:
-
-    madam →  Palindrome
-    
-    racecar →  Palindrome
-    
-    hello →  Not a palindrome
-    
-    A man a plan a canal Panama →  Palindrome
-
-Features
-
-    Checks words, phrases, or numbers
-
-Ignores:
-
-    Spaces
-    
-    Punctuation
-    
-    Case sensitivity
-    
-    Lightweight and fast
-    
-    Easy to integrate into other projects
-
-How It Works :-
-
-    Accepts input from the user.
-    
-    Removes non-alphanumeric characters.
-    
-    Converts text to lowercase.
-    
-    Compares the cleaned string with its reverse.
-    
-    Returns whether it is a palindrome.
+This application demonstrates a simple palindrome validation in Java using a hardcoded string value (`"madam"`). It compares characters from both ends of the string by incrementing a left pointer and decrementing a right pointer until they meet, determining whether the string reads the same forward and backward. The program introduces fundamental string comparison logic without using advanced data structures and prints the result to the console indicating whether the predefined text is a palindrome or not.
