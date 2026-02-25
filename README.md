@@ -1,30 +1,4 @@
-This project validates palindromes by leveraging the Last-In, First-Out (LIFO) principle of a Stack. By pushing characters onto a stack and then popping them, the application effectively reverses the string, which can then be compared to the original input.
-Features
-    Stack Integration: Utilizes java.util.Stack for character management.
-    LIFO Logic: Maps stack behavior directly to string reversal logic.
-    Case Sensitivity: Implements equalsIgnoreCase to ensure "Noon" is correctly identified as a palindrome.
-    Simple & Clean: Clear console output for original vs. reversed strings.
- How It Works
-    Input: The program takes a string (e.g., "noon").
-    Push Phase: Each character is pushed onto the Stack one by one.
-    Pop Phase: Characters are popped from the Stack. Because the last character pushed is the first one popped, the characters come out in reverse order.
-    Verification: The original string is compared to the reversed string created from the popped characters.
-     Installation & Usage
-    Ensure you have Java JDK installed on your system.
-    Copy the source code into a file named UseCase5PalindromeCheckerApp.java.
-    Compile the program:
-    bash
-    javac UseCase5PalindromeCheckerApp.java
-    Use code with caution.
-
-Run the application:
-    bash
-    java UseCase5PalindromeCheckerApp
-    Use code with caution.
-
-Example Output
-    text
-    Input: noon
-    Reversed: noon
-    The string is a palindrome.
-    Use code with caution.
+Project Overview:
+The UseCase6PalindromeCheckerApp is a specialized Java application that demonstrates how to identify palindromes by leveraging the unique behaviors of Stacks and Queues. A palindrome is a sequence that reads the same forwards and backwards, and this program validates that symmetry by comparing two distinct data representations of the input string. It serves as a practical academic exercise for understanding how LIFO (Last-In, First-Out) and FIFO (First-In, First-Out) processing can be combined to solve complex string manipulation problems.
+How It Works:
+The application operates by simultaneously inserting each character of a user-provided string into both a Stack and a Queue. Because a Queue retrieves items in their original order while a Stack retrieves them in reverse, the program can verify symmetry by popping elements from both structures and comparing them one by one. If every pair of characters matches throughout the entire sequence, the string is confirmed as a palindrome; otherwise, the program immediately identifies it as non-palindromic.
