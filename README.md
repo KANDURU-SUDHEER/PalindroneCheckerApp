@@ -1,64 +1,30 @@
-PalindromeCheckerApp (Version 4.0) validates whether a given string is a palindrome using:
+This project validates palindromes by leveraging the Last-In, First-Out (LIFO) principle of a Stack. By pushing characters onto a stack and then popping them, the application effectively reverses the string, which can then be compared to the original input.
+Features
+    Stack Integration: Utilizes java.util.Stack for character management.
+    LIFO Logic: Maps stack behavior directly to string reversal logic.
+    Case Sensitivity: Implements equalsIgnoreCase to ensure "Noon" is correctly identified as a palindrome.
+    Simple & Clean: Clear console output for original vs. reversed strings.
+ How It Works
+    Input: The program takes a string (e.g., "noon").
+    Push Phase: Each character is pushed onto the Stack one by one.
+    Pop Phase: Characters are popped from the Stack. Because the last character pushed is the first one popped, the characters come out in reverse order.
+    Verification: The original string is compared to the reversed string created from the popped characters.
+     Installation & Usage
+    Ensure you have Java JDK installed on your system.
+    Copy the source code into a file named UseCase5PalindromeCheckerApp.java.
+    Compile the program:
+    bash
+    javac UseCase5PalindromeCheckerApp.java
+    Use code with caution.
 
-Character Array Conversion
+Run the application:
+    bash
+    java UseCase5PalindromeCheckerApp
+    Use code with caution.
 
-Two-Pointer Technique
-
-Efficient Character Comparison
-
-Minimal Extra Logic
-
-This implementation improves performance clarity and demonstrates optimized string validation using array-based processing.
-
- What is a Palindrome?
-
-A palindrome is a word, phrase, or sequence that reads the same forward and backward.
-
-Examples
-Input	Output
-madam	true
-level	true
-hello	false
-racecar	true
-🛠 Features
-
-Converts string to character array
-
-Uses start and end pointers
-
-Efficient comparison loop
-
-O(n) time complexity
-
-Clean modular method design
-
-Console-based interaction
-
- Algorithm Used – Two Pointer Technique
-
-Convert the string to a char[]
-
-Initialize:
-
-start = 0
-
-end = length - 1
-
-Compare characters at both ends
-
-Move inward:
-
-start++
-
-end--
-
-If mismatch found → Not a palindrome
-
-If loop completes → Palindrome
-
-⏱ Complexity Analysis
-
-Time Complexity: O(n)
-
-Space Complexity: O(n)
-(due to character array conversion)
+Example Output
+    text
+    Input: noon
+    Reversed: noon
+    The string is a palindrome.
+    Use code with caution.
