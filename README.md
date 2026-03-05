@@ -1,64 +1,13 @@
-PalindromeCheckerApp (Version 4.0) validates whether a given string is a palindrome using:
-
-Character Array Conversion
-
-Two-Pointer Technique
-
-Efficient Character Comparison
-
-Minimal Extra Logic
-
-This implementation improves performance clarity and demonstrates optimized string validation using array-based processing.
-
- What is a Palindrome?
-
-A palindrome is a word, phrase, or sequence that reads the same forward and backward.
-
-Examples
-Input	Output
-madam	true
-level	true
-hello	false
-racecar	true
-🛠 Features
-
-Converts string to character array
-
-Uses start and end pointers
-
-Efficient comparison loop
-
-O(n) time complexity
-
-Clean modular method design
-
-Console-based interaction
-
- Algorithm Used – Two Pointer Technique
-
-Convert the string to a char[]
-
-Initialize:
-
-start = 0
-
-end = length - 1
-
-Compare characters at both ends
-
-Move inward:
-
-start++
-
-end--
-
-If mismatch found → Not a palindrome
-
-If loop completes → Palindrome
-
-⏱ Complexity Analysis
-
-Time Complexity: O(n)
-
-Space Complexity: O(n)
-(due to character array conversion)
+README: UC13 Performance Comparison
+Goal
+To transition from functional code to performant code by measuring how long specific algorithms take to execute in nanoseconds ($ns$).
+Key ConceptsSystem.nanoTime():
+Unlike currentTimeMillis(), this provides the most precise available system timer for measuring elapsed time.
+Benchmarking: The process of running a specific task and measuring its performance metrics.
+Overhead: Understanding that different data structures (like Stack) have different memory and time costs.
+Execution InstructionsTo match the requirements shown in your provided image, follow these terminal commands:
+Compile the program:javac UseCase13PalindromeCheckerApp.
+javaRun the program:java UseCase13PalindromeCheckerApp
+Expected Output FormatPlaintextInput : level
+Is Palindrome? : true
+Execution Time : 852600 ns
